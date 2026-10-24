@@ -1,5 +1,5 @@
 def welcome():
-    return "Hello from my first Jenkins application"
+    return "Hello from my Jenkins application"
 
 if __name__=="__main__":
     print(welcome())
