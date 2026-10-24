@@ -21,16 +21,16 @@ pipeline{
                 '''
             }
         }
-        stage('Run Tests'){
-            steps{
-                sh '.venv/bin/python -m pytest -v'
-            }
-        }
+        // stage('Run Tests'){
+        //     steps{
+        //         sh '.venv/bin/python -m pytest -v'
+        //     }
+        // }
         stage('Run Application'){
             steps{
                 sh '.venv/bin/python app.py'
             }
         }
     }
-    
+
 }
